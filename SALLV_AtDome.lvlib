@@ -32,6 +32,7 @@
 		<Item Name="logevent_azimuthInPosition.ctl" Type="VI" URL="../DataTypes/logevent_azimuthInPosition.ctl"/>
 		<Item Name="logevent_azimuthMovingDirection.ctl" Type="VI" URL="../DataTypes/logevent_azimuthMovingDirection.ctl"/>
 		<Item Name="logevent_azimuthState.ctl" Type="VI" URL="../DataTypes/logevent_azimuthState.ctl"/>
+		<Item Name="logevent_detailedState.ctl" Type="VI" URL="../DataTypes/logevent_detailedState.ctl"/>
 		<Item Name="logevent_dropoutDoorState.ctl" Type="VI" URL="../DataTypes/logevent_dropoutDoorState.ctl"/>
 		<Item Name="logevent_emergencyStop.ctl" Type="VI" URL="../DataTypes/logevent_emergencyStop.ctl"/>
 		<Item Name="logevent_errorCode.ctl" Type="VI" URL="../DataTypes/logevent_errorCode.ctl"/>
@@ -48,6 +49,7 @@
 		<Item Name="logevent_shutterInPosition.ctl" Type="VI" URL="../DataTypes/logevent_shutterInPosition.ctl"/>
 		<Item Name="logevent_summaryState.ctl" Type="VI" URL="../DataTypes/logevent_summaryState.ctl"/>
 		<Item Name="loopTime.ctl" Type="VI" URL="../DataTypes/loopTime.ctl"/>
+		<Item Name="position.ctl" Type="VI" URL="../DataTypes/position.ctl"/>
 		<Item Name="timestamp.ctl" Type="VI" URL="../DataTypes/timestamp.ctl"/>
 	</Item>
 	<Item Name="subvi" Type="Folder">
@@ -115,6 +117,7 @@
 	<Item Name="AtDome_cancelCallback_logEvent_azimuthInPosition.vi" Type="VI" URL="../VIs/AtDome_cancelCallback_logEvent_azimuthInPosition.vi"/>
 	<Item Name="AtDome_cancelCallback_logEvent_azimuthMovingDirection.vi" Type="VI" URL="../VIs/AtDome_cancelCallback_logEvent_azimuthMovingDirection.vi"/>
 	<Item Name="AtDome_cancelCallback_logEvent_azimuthState.vi" Type="VI" URL="../VIs/AtDome_cancelCallback_logEvent_azimuthState.vi"/>
+	<Item Name="AtDome_cancelCallback_logEvent_detailedState.vi" Type="VI" URL="../VIs/AtDome_cancelCallback_logEvent_detailedState.vi"/>
 	<Item Name="AtDome_cancelCallback_logEvent_dropoutDoorState.vi" Type="VI" URL="../VIs/AtDome_cancelCallback_logEvent_dropoutDoorState.vi"/>
 	<Item Name="AtDome_cancelCallback_logEvent_emergencyStop.vi" Type="VI" URL="../VIs/AtDome_cancelCallback_logEvent_emergencyStop.vi"/>
 	<Item Name="AtDome_cancelCallback_logEvent_errorCode.vi" Type="VI" URL="../VIs/AtDome_cancelCallback_logEvent_errorCode.vi"/>
@@ -131,6 +134,7 @@
 	<Item Name="AtDome_cancelCallback_logEvent_shutterInPosition.vi" Type="VI" URL="../VIs/AtDome_cancelCallback_logEvent_shutterInPosition.vi"/>
 	<Item Name="AtDome_cancelCallback_logEvent_summaryState.vi" Type="VI" URL="../VIs/AtDome_cancelCallback_logEvent_summaryState.vi"/>
 	<Item Name="AtDome_cancelCallback_loopTime.vi" Type="VI" URL="../VIs/AtDome_cancelCallback_loopTime.vi"/>
+	<Item Name="AtDome_cancelCallback_position.vi" Type="VI" URL="../VIs/AtDome_cancelCallback_position.vi"/>
 	<Item Name="AtDome_cancelCallback_timestamp.vi" Type="VI" URL="../VIs/AtDome_cancelCallback_timestamp.vi"/>
 	<Item Name="AtDome_checkCallbacks.vi" Type="VI" URL="../VIs/AtDome_checkCallbacks.vi"/>
 	<Item Name="AtDome_flushSamplesEvent_allAxisInPosition.vi" Type="VI" URL="../VIs/AtDome_flushSamplesEvent_allAxisInPosition.vi"/>
@@ -138,6 +142,7 @@
 	<Item Name="AtDome_flushSamplesEvent_azimuthInPosition.vi" Type="VI" URL="../VIs/AtDome_flushSamplesEvent_azimuthInPosition.vi"/>
 	<Item Name="AtDome_flushSamplesEvent_azimuthMovingDirection.vi" Type="VI" URL="../VIs/AtDome_flushSamplesEvent_azimuthMovingDirection.vi"/>
 	<Item Name="AtDome_flushSamplesEvent_azimuthState.vi" Type="VI" URL="../VIs/AtDome_flushSamplesEvent_azimuthState.vi"/>
+	<Item Name="AtDome_flushSamplesEvent_detailedState.vi" Type="VI" URL="../VIs/AtDome_flushSamplesEvent_detailedState.vi"/>
 	<Item Name="AtDome_flushSamplesEvent_dropoutDoorState.vi" Type="VI" URL="../VIs/AtDome_flushSamplesEvent_dropoutDoorState.vi"/>
 	<Item Name="AtDome_flushSamplesEvent_emergencyStop.vi" Type="VI" URL="../VIs/AtDome_flushSamplesEvent_emergencyStop.vi"/>
 	<Item Name="AtDome_flushSamplesEvent_errorCode.vi" Type="VI" URL="../VIs/AtDome_flushSamplesEvent_errorCode.vi"/>
@@ -159,6 +164,7 @@
 	<Item Name="AtDome_getEvent_azimuthInPosition.vi" Type="VI" URL="../VIs/AtDome_getEvent_azimuthInPosition.vi"/>
 	<Item Name="AtDome_getEvent_azimuthMovingDirection.vi" Type="VI" URL="../VIs/AtDome_getEvent_azimuthMovingDirection.vi"/>
 	<Item Name="AtDome_getEvent_azimuthState.vi" Type="VI" URL="../VIs/AtDome_getEvent_azimuthState.vi"/>
+	<Item Name="AtDome_getEvent_detailedState.vi" Type="VI" URL="../VIs/AtDome_getEvent_detailedState.vi"/>
 	<Item Name="AtDome_getEvent_dropoutDoorState.vi" Type="VI" URL="../VIs/AtDome_getEvent_dropoutDoorState.vi"/>
 	<Item Name="AtDome_getEvent_emergencyStop.vi" Type="VI" URL="../VIs/AtDome_getEvent_emergencyStop.vi"/>
 	<Item Name="AtDome_getEvent_errorCode.vi" Type="VI" URL="../VIs/AtDome_getEvent_errorCode.vi"/>
@@ -175,6 +181,7 @@
 	<Item Name="AtDome_getEvent_shutterInPosition.vi" Type="VI" URL="../VIs/AtDome_getEvent_shutterInPosition.vi"/>
 	<Item Name="AtDome_getEvent_summaryState.vi" Type="VI" URL="../VIs/AtDome_getEvent_summaryState.vi"/>
 	<Item Name="AtDome_getNextSample_loopTime.vi" Type="VI" URL="../VIs/AtDome_getNextSample_loopTime.vi"/>
+	<Item Name="AtDome_getNextSample_position.vi" Type="VI" URL="../VIs/AtDome_getNextSample_position.vi"/>
 	<Item Name="AtDome_getNextSample_timestamp.vi" Type="VI" URL="../VIs/AtDome_getNextSample_timestamp.vi"/>
 	<Item Name="AtDome_getResponse_closeShutter.vi" Type="VI" URL="../VIs/AtDome_getResponse_closeShutter.vi"/>
 	<Item Name="AtDome_getResponse_disable.vi" Type="VI" URL="../VIs/AtDome_getResponse_disable.vi"/>
@@ -190,6 +197,7 @@
 	<Item Name="AtDome_getResponse_stopMotionAllAxis.vi" Type="VI" URL="../VIs/AtDome_getResponse_stopMotionAllAxis.vi"/>
 	<Item Name="AtDome_getResponse_stopShutter.vi" Type="VI" URL="../VIs/AtDome_getResponse_stopShutter.vi"/>
 	<Item Name="AtDome_getSample_loopTime.vi" Type="VI" URL="../VIs/AtDome_getSample_loopTime.vi"/>
+	<Item Name="AtDome_getSample_position.vi" Type="VI" URL="../VIs/AtDome_getSample_position.vi"/>
 	<Item Name="AtDome_getSample_timestamp.vi" Type="VI" URL="../VIs/AtDome_getSample_timestamp.vi"/>
 	<Item Name="AtDome_issueCommand_closeShutter.vi" Type="VI" URL="../VIs/AtDome_issueCommand_closeShutter.vi"/>
 	<Item Name="AtDome_issueCommand_disable.vi" Type="VI" URL="../VIs/AtDome_issueCommand_disable.vi"/>
@@ -209,6 +217,7 @@
 	<Item Name="AtDome_logEvent_azimuthInPosition.vi" Type="VI" URL="../VIs/AtDome_logEvent_azimuthInPosition.vi"/>
 	<Item Name="AtDome_logEvent_azimuthMovingDirection.vi" Type="VI" URL="../VIs/AtDome_logEvent_azimuthMovingDirection.vi"/>
 	<Item Name="AtDome_logEvent_azimuthState.vi" Type="VI" URL="../VIs/AtDome_logEvent_azimuthState.vi"/>
+	<Item Name="AtDome_logEvent_detailedState.vi" Type="VI" URL="../VIs/AtDome_logEvent_detailedState.vi"/>
 	<Item Name="AtDome_logEvent_dropoutDoorState.vi" Type="VI" URL="../VIs/AtDome_logEvent_dropoutDoorState.vi"/>
 	<Item Name="AtDome_logEvent_emergencyStop.vi" Type="VI" URL="../VIs/AtDome_logEvent_emergencyStop.vi"/>
 	<Item Name="AtDome_logEvent_errorCode.vi" Type="VI" URL="../VIs/AtDome_logEvent_errorCode.vi"/>
@@ -238,6 +247,7 @@
 	<Item Name="AtDome_monitorCommand_stopMotionAllAxis.vi" Type="VI" URL="../VIs/AtDome_monitorCommand_stopMotionAllAxis.vi"/>
 	<Item Name="AtDome_monitorCommand_stopShutter.vi" Type="VI" URL="../VIs/AtDome_monitorCommand_stopShutter.vi"/>
 	<Item Name="AtDome_putSample_loopTime.vi" Type="VI" URL="../VIs/AtDome_putSample_loopTime.vi"/>
+	<Item Name="AtDome_putSample_position.vi" Type="VI" URL="../VIs/AtDome_putSample_position.vi"/>
 	<Item Name="AtDome_putSample_timestamp.vi" Type="VI" URL="../VIs/AtDome_putSample_timestamp.vi"/>
 	<Item Name="AtDome_registerCallback_ackcmd.vi" Type="VI" URL="../VIs/AtDome_registerCallback_ackcmd.vi"/>
 	<Item Name="AtDome_registerCallback_command_.vi" Type="VI" URL="../VIs/AtDome_registerCallback_command_.vi"/>
@@ -273,6 +283,7 @@
 	<Item Name="AtDome_registerCallback_logEvent_azimuthInPosition.vi" Type="VI" URL="../VIs/AtDome_registerCallback_logEvent_azimuthInPosition.vi"/>
 	<Item Name="AtDome_registerCallback_logEvent_azimuthMovingDirection.vi" Type="VI" URL="../VIs/AtDome_registerCallback_logEvent_azimuthMovingDirection.vi"/>
 	<Item Name="AtDome_registerCallback_logEvent_azimuthState.vi" Type="VI" URL="../VIs/AtDome_registerCallback_logEvent_azimuthState.vi"/>
+	<Item Name="AtDome_registerCallback_logEvent_detailedState.vi" Type="VI" URL="../VIs/AtDome_registerCallback_logEvent_detailedState.vi"/>
 	<Item Name="AtDome_registerCallback_logEvent_dropoutDoorState.vi" Type="VI" URL="../VIs/AtDome_registerCallback_logEvent_dropoutDoorState.vi"/>
 	<Item Name="AtDome_registerCallback_logEvent_emergencyStop.vi" Type="VI" URL="../VIs/AtDome_registerCallback_logEvent_emergencyStop.vi"/>
 	<Item Name="AtDome_registerCallback_logEvent_errorCode.vi" Type="VI" URL="../VIs/AtDome_registerCallback_logEvent_errorCode.vi"/>
@@ -289,6 +300,7 @@
 	<Item Name="AtDome_registerCallback_logEvent_shutterInPosition.vi" Type="VI" URL="../VIs/AtDome_registerCallback_logEvent_shutterInPosition.vi"/>
 	<Item Name="AtDome_registerCallback_logEvent_summaryState.vi" Type="VI" URL="../VIs/AtDome_registerCallback_logEvent_summaryState.vi"/>
 	<Item Name="AtDome_registerCallback_loopTime.vi" Type="VI" URL="../VIs/AtDome_registerCallback_loopTime.vi"/>
+	<Item Name="AtDome_registerCallback_position.vi" Type="VI" URL="../VIs/AtDome_registerCallback_position.vi"/>
 	<Item Name="AtDome_registerCallback_timestamp.vi" Type="VI" URL="../VIs/AtDome_registerCallback_timestamp.vi"/>
 	<Item Name="AtDome_salCommander_closeShutter.vi" Type="VI" URL="../VIs/AtDome_salCommander_closeShutter.vi"/>
 	<Item Name="AtDome_salCommander_disable.vi" Type="VI" URL="../VIs/AtDome_salCommander_disable.vi"/>
@@ -308,6 +320,7 @@
 	<Item Name="AtDome_salEvent_azimuthInPosition.vi" Type="VI" URL="../VIs/AtDome_salEvent_azimuthInPosition.vi"/>
 	<Item Name="AtDome_salEvent_azimuthMovingDirection.vi" Type="VI" URL="../VIs/AtDome_salEvent_azimuthMovingDirection.vi"/>
 	<Item Name="AtDome_salEvent_azimuthState.vi" Type="VI" URL="../VIs/AtDome_salEvent_azimuthState.vi"/>
+	<Item Name="AtDome_salEvent_detailedState.vi" Type="VI" URL="../VIs/AtDome_salEvent_detailedState.vi"/>
 	<Item Name="AtDome_salEvent_dropoutDoorState.vi" Type="VI" URL="../VIs/AtDome_salEvent_dropoutDoorState.vi"/>
 	<Item Name="AtDome_salEvent_emergencyStop.vi" Type="VI" URL="../VIs/AtDome_salEvent_emergencyStop.vi"/>
 	<Item Name="AtDome_salEvent_errorCode.vi" Type="VI" URL="../VIs/AtDome_salEvent_errorCode.vi"/>
@@ -337,6 +350,7 @@
 	<Item Name="AtDome_salProcessor_stopMotionAllAxis.vi" Type="VI" URL="../VIs/AtDome_salProcessor_stopMotionAllAxis.vi"/>
 	<Item Name="AtDome_salProcessor_stopShutter.vi" Type="VI" URL="../VIs/AtDome_salProcessor_stopShutter.vi"/>
 	<Item Name="AtDome_salTelemetrySub_loopTime.vi" Type="VI" URL="../VIs/AtDome_salTelemetrySub_loopTime.vi"/>
+	<Item Name="AtDome_salTelemetrySub_position.vi" Type="VI" URL="../VIs/AtDome_salTelemetrySub_position.vi"/>
 	<Item Name="AtDome_salTelemetrySub_timestamp.vi" Type="VI" URL="../VIs/AtDome_salTelemetrySub_timestamp.vi"/>
 	<Item Name="AtDome_waitForCompletion_closeShutter.vi" Type="VI" URL="../VIs/AtDome_waitForCompletion_closeShutter.vi"/>
 	<Item Name="AtDome_waitForCompletion_disable.vi" Type="VI" URL="../VIs/AtDome_waitForCompletion_disable.vi"/>
